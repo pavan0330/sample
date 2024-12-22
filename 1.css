@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    justify-items: center;
+}
+.div{
+   border: 2px solid white;
+   width: 90%;
+   height: 250px;
+   display: flex;
+   flex-direction: row;
+}
+.img{
+    align-items: center;
+}

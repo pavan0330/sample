@@ -1,0 +1,24 @@
+package project.yt;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class akhil {
+
+	public static void main(String[] args) throws InterruptedException {
+		 System.setProperty("WebDriver.chrome.driver", "C:\\Users\\Admin\\Downloads");
+	        WebDriver driver = new ChromeDriver();
+	        driver.get("https://github.com/login");
+	        driver.manage().window().maximize();
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//*[@id=\"login_field\"]")).sendKeys("dasariakki2003@gmail.com");
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Dharani@2006");
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//*[@id=\"login\"]/div[4]/form/div/input[13]")).click();
+	        
+	        
+	}
+
+}

@@ -1,0 +1,33 @@
+package project.yt;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class cla {
+
+	public static void main(String[] args) throws InterruptedException {
+		 System.setProperty("WebDriver.chrome.driver", "C:\\Users\\Admin\\Downloads");
+	        WebDriver driver = new ChromeDriver();
+	        driver.get("https://internship.aicte-india.org/login_new.php");
+	        driver.manage().window().maximize();
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//*[@id=\"login-student-tab\"]/i")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//*[@id=\"confirmmodal\"]")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("chilakamanu@gmail.com");
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("manoj");
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//*[@id=\"recaptcha-anchor-label\"]")).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
+	        Thread.sleep(3000);
+	        
+	       // driver.close();
+	        
+
+	}
+
+}
